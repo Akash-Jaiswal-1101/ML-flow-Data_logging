@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import mlflow
-df = pd.read_csv('https://raw.githubusercontent.com/npradaschnor/Pima-Indians-Diabetes-Dataset/master...')
+df = pd.read_csv('diabetes.csv')
 
 # Splitting data into features and target
 X = df.drop('Outcome', axis=1)
